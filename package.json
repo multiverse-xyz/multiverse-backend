@@ -1,0 +1,28 @@
+{
+  "name": "multiverse-backend",
+  "version": "1.0.0",
+  "description": "Multiverse Verses contract indexer and REST API",
+  "scripts": {
+    "build": "tsc",
+    "listener": "ts-node src/listener.ts",
+    "api": "ts-node src/api.ts",
+    "start:listener": "node build/listener.js",
+    "start:api": "node build/api.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^5.1.0",
+    "mongodb": "^7.0.0",
+    "pino": "^9.6.0",
+    "pino-pretty": "^13.0.0",
+    "viem": "^2.38.6"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.0"
+  }
+}
